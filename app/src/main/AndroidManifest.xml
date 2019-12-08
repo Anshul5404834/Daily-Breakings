@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.anshul5404834.rm">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/chat"
+        android:label="Justatus"
+        android:roundIcon="@drawable/chat"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".main_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SEND"></action>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Authorization" />
+        <activity android:name=".all_stuff">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"></action>
+            </intent-filter>
+        </activity>
+        <activity android:name=".comments"></activity>
+        <activity android:name=".others_profile"></activity>
+        <activity
+            android:name=".Appearance"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+            <meta-data
+                android:name="com.google.android.gms.ads.APPLICATION_ID"
+                android:value="ca-app-pub-8775257823411929~8119804698" />
+        </activity>
+        <activity android:name=".Design_own"></activity>
+        <activity
+            android:name=".profile"
+            android:label="Profile"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".How_to_use"
+            android:label="How to use ?"></activity>
+        <activity android:name=".suggestions"></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8775257823411929~8119804698" />
+
+    </application>
+
+</manifest>

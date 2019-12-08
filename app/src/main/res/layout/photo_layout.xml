@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Theme.AppCompat.NoActionBar"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:cropToPadding="true"
+        android:elevation="10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/colorPrimary"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/fonts"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbackground"
+            android:src="@drawable/ic_format_bold_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/draw_external"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/buttonbackground"
+            android:src="@drawable/ic_create_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/font_size"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/buttonbackground"
+            android:src="@drawable/ic_plus_one_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/solid_colour"
+            android:layout_width="50dp"
+
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbackground"
+            android:src="@drawable/ic_photo_filter_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/upload_image"
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbackground"
+            android:src="@drawable/ic_file_upload_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/font_size_body"
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbackground"
+            android:src="@drawable/ic_plus_one_black_24dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        style="@style/Widget.AppCompat.Light.ListView.DropDown"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:layout_marginBottom="8dp"
+        android:animationCache="true"
+        android:background="@color/colorAccent"
+        android:divider="@color/colorPrimary"
+        android:dividerHeight="0.2dp"
+        android:layoutDirection="ltr"
+        android:layoutMode="clipBounds"
+        android:orientation="horizontal"
+        android:rotation="0"
+        android:scrollbars="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
